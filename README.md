@@ -12,7 +12,14 @@ $ cd masbcpp
 $ cmake .
 $ make
 ```
-Building on windows should be possible with Visual Studio.
+
+For Windows:
+```
+1. Download and install PCL-1.8.1-AllInOne-msvc2015-win64.exe binary install package @ https://github.com/PointCloudLibrary/pcl/releases
+2. Add C:\Program Files\PCL 1.8.1\bin in your Path of Environment variables
+3. Open masbcpp\vs_build\masbcpp.sln using Visual Studio 2015
+4. Build compute_ma, compute_normals, compute_simplify based on your needs 
+```
 
 ### External dependencies
 [PCL](https://github.com/PointCloudLibrary/pcl) is currently the only dependency that is not included in this distribution (but PCL has many dependencies of its own).
