@@ -69,12 +69,14 @@ int main(int argc, char **argv) {
       madata.ma_coords.reset(new PointCloud);
       madata.ma_coords->resize(2 * madata.coords->size());
       madata.ma_qidx.resize(2 * madata.coords->size());
+	  madata.ma_radius.resize(2 * madata.coords->size());
       compute_masb_points(input_parameters, madata);
 
       io_params.coords = false;
       io_params.normals = false;
       io_params.ma_coords = true;
       io_params.ma_qidx = true;
+	  io_params.ma_radius = true;
       madata2npy(output_path, madata, io_params);
 
       {

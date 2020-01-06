@@ -122,9 +122,9 @@ ma_result sb_point(const ma_parameters &input_parameters, const Vector3 &p, cons
    }
 
    if (j == 0 && input_parameters.nan_for_initr)
-      return{ nanPoint, -1 };
+      return{ nanPoint, -1,-1 };
    else
-      return{ c, qidx };
+      return{ c, qidx, r };
 }
 
 void sb_points(ma_parameters &input_parameters, ma_data &madata, bool inner, progress_callback callback) {
@@ -149,6 +149,7 @@ void sb_points(ma_parameters &input_parameters, ma_data &madata, bool inner, pro
 
       (*madata.ma_coords)[i + offset] = r.c;
       madata.ma_qidx[i + offset] = r.qidx;
+	  madata.ma_radius[i + offset] = r.radius;
 
       accum++;
       if (accum == 5000)
@@ -188,7 +189,7 @@ void compute_masb_points(ma_parameters &input_parameters, ma_data &madata, progr
 #endif
 
    // Outside processing
-   sb_points(input_parameters, madata, 0, callback);
+   //sb_points(input_parameters, madata, 0, callback);
 #ifdef VERBOSEPRINT
    elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(Clock::now() - start_time);
    std::cout << "Done shrinking exterior balls, took " << elapsed_time.count() << " ms" << std::endl;

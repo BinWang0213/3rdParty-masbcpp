@@ -37,6 +37,7 @@ struct ma_parameters {
 struct ma_result {
    Point c;
    int qidx;
+   double radius;
 };
 
 using progress_callback = std::function<void(size_t progress)>;

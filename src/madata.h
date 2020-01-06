@@ -32,6 +32,7 @@ struct ma_data {
    NormalCloud::Ptr normals;
    PointCloud::Ptr ma_coords;
    std::vector<int> ma_qidx;
+   std::vector<float> ma_radius;
 
    std::vector<float> lfs;
    std::vector<bool> mask;

@@ -97,7 +97,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WITH_OPENMP;WIN32;_USE_MATH_DEFINES;NOMINMAX;VERBOSEPRINT;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\thirdparty;D:\Code\3rd\redistributable\free_use\zlib\include;D:\Code\3rd\redistributable\free_use\eigen\eigen_DO_NOT_INCLUDE\;D:\Code\3rd\redistributable\free_use\pcl\src\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\Boost\include\boost-1_60;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\FLANN\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\OpenNI2\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\Qhull\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\VTK\include\vtk-7.0</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\thirdparty;..\thirdparty\Zlib\include;..\thirdparty\eigen-3.3.7;C:\Program Files\PCL 1.8.1\include\pcl-1.8;C:\Program Files\PCL 1.8.1\3rdParty\Boost\include\boost-1_64;C:\Program Files\PCL 1.8.1\3rdParty\FLANN\include;C:\Program Files\OpenNI2\Include;C:\Program Files\PCL 1.8.1\3rdParty\Qhull\include;C:\Program Files\PCL 1.8.1\3rdParty\VTK\include\vtk-8.0</AdditionalIncludeDirectories>
       <OpenMPSupport>true</OpenMPSupport>
       <DisableSpecificWarnings>4996;4005;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
@@ -107,10 +107,10 @@
       <AdditionalDependencies>winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Lib>
-      <AdditionalDependencies>Boost\lib\$(PlatformTarget)\libboost_system-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_filesystem-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_thread-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_date_time-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_iostreams-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_serialization-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_chrono-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_atomic-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_regex-vc140-mt-1_60.lib;OpenNI2\lib\$(PlatformTarget)\OpenNI2.lib;pcl_common_debug.lib;pcl_search_debug.lib;pcl_features_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_system-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_filesystem-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_thread-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_date_time-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_iostreams-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_serialization-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_chrono-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_atomic-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_regex-vc140-mt-1_64.lib;C:\Program Files\OpenNI2\Lib\OpenNI2.lib;pcl_common_debug.lib;pcl_search_debug.lib;pcl_features_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty;D:\Code\3rd\redistributable\free_use\pcl\src\bin\$(PlatformTarget)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files\PCL 1.8.1\3rdParty;C:\Program Files\PCL 1.8.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/IGNORE:4006 /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
@@ -121,7 +121,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WITH_OPENMP;WIN32;_USE_MATH_DEFINES;NOMINMAX;VERBOSEPRINT;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\thirdparty;D:\Code\3rd\redistributable\free_use\zlib\include;D:\Code\3rd\redistributable\free_use\eigen\eigen_DO_NOT_INCLUDE\;D:\Code\3rd\redistributable\free_use\pcl\src\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\Boost\include\boost-1_60;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\FLANN\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\OpenNI2\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\Qhull\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\VTK\include\vtk-7.0</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\thirdparty;..\thirdparty\Zlib\include;..\thirdparty\eigen-3.3.7;C:\Program Files\PCL 1.8.1\include\pcl-1.8;C:\Program Files\PCL 1.8.1\3rdParty\Boost\include\boost-1_64;C:\Program Files\PCL 1.8.1\3rdParty\FLANN\include;C:\Program Files\OpenNI2\Include;C:\Program Files\PCL 1.8.1\3rdParty\Qhull\include;C:\Program Files\PCL 1.8.1\3rdParty\VTK\include\vtk-8.0</AdditionalIncludeDirectories>
       <OpenMPSupport>true</OpenMPSupport>
       <DisableSpecificWarnings>4996;4005;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
@@ -131,10 +131,10 @@
       <AdditionalDependencies>winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Lib>
-      <AdditionalDependencies>Boost\lib\$(PlatformTarget)\libboost_system-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_filesystem-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_thread-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_date_time-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_iostreams-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_serialization-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_chrono-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_atomic-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_regex-vc140-mt-1_60.lib;OpenNI2\lib\$(PlatformTarget)\OpenNI2.lib;pcl_common_debug.lib;pcl_search_debug.lib;pcl_features_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_system-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_filesystem-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_thread-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_date_time-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_iostreams-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_serialization-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_chrono-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_atomic-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_regex-vc140-mt-1_64.lib;C:\Program Files\OpenNI2\Lib\OpenNI2.lib;pcl_common_debug.lib;pcl_search_debug.lib;pcl_features_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty;D:\Code\3rd\redistributable\free_use\pcl\src\bin\$(PlatformTarget)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files\PCL 1.8.1\3rdParty;C:\Program Files\PCL 1.8.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/IGNORE:4006 /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
@@ -147,7 +147,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WITH_OPENMP;WIN32;_USE_MATH_DEFINES;NOMINMAX;VERBOSEPRINT;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\thirdparty;D:\Code\3rd\redistributable\free_use\zlib\include;D:\Code\3rd\redistributable\free_use\eigen\eigen_DO_NOT_INCLUDE\;D:\Code\3rd\redistributable\free_use\pcl\src\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\Boost\include\boost-1_60;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\FLANN\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\OpenNI2\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\Qhull\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\VTK\include\vtk-7.0</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\thirdparty;..\thirdparty\Zlib\include;..\thirdparty\eigen-3.3.7;C:\Program Files\PCL 1.8.1\include\pcl-1.8;C:\Program Files\PCL 1.8.1\3rdParty\Boost\include\boost-1_64;C:\Program Files\PCL 1.8.1\3rdParty\FLANN\include;C:\Program Files\OpenNI2\Include;C:\Program Files\PCL 1.8.1\3rdParty\Qhull\include;C:\Program Files\PCL 1.8.1\3rdParty\VTK\include\vtk-8.0</AdditionalIncludeDirectories>
       <OpenMPSupport>true</OpenMPSupport>
       <DisableSpecificWarnings>4996;4005;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
@@ -159,10 +159,10 @@
       <AdditionalDependencies>winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Lib>
-      <AdditionalDependencies>Boost\lib\$(PlatformTarget)\libboost_system-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_filesystem-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_thread-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_date_time-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_iostreams-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_serialization-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_chrono-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_atomic-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_regex-vc140-mt-1_60.lib;OpenNI2\lib\$(PlatformTarget)\OpenNI2.lib;pcl_common_release.lib;pcl_search_release.lib;pcl_features_release.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_system-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_filesystem-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_thread-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_date_time-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_iostreams-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_serialization-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_chrono-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_atomic-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_regex-vc140-mt-1_64.lib;C:\Program Files\OpenNI2\Lib\OpenNI2.lib;pcl_common_release.lib;pcl_search_release.lib;pcl_features_release.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty;D:\Code\3rd\redistributable\free_use\pcl\src\bin\$(PlatformTarget)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files\PCL 1.8.1\3rdParty;C:\Program Files\PCL 1.8.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/IGNORE:4006 /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
@@ -175,7 +175,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WITH_OPENMP;WIN32;_USE_MATH_DEFINES;NOMINMAX;VERBOSEPRINT;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\thirdparty;D:\Code\3rd\redistributable\free_use\zlib\include;D:\Code\3rd\redistributable\free_use\eigen\eigen_DO_NOT_INCLUDE\;D:\Code\3rd\redistributable\free_use\pcl\src\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\Boost\include\boost-1_60;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\FLANN\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\OpenNI2\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\Qhull\include;D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty\VTK\include\vtk-7.0</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\thirdparty;..\thirdparty\Zlib\include;..\thirdparty\eigen-3.3.7;C:\Program Files\PCL 1.8.1\include\pcl-1.8;C:\Program Files\PCL 1.8.1\3rdParty\Boost\include\boost-1_64;C:\Program Files\PCL 1.8.1\3rdParty\FLANN\include;C:\Program Files\OpenNI2\Include;C:\Program Files\PCL 1.8.1\3rdParty\Qhull\include;C:\Program Files\PCL 1.8.1\3rdParty\VTK\include\vtk-8.0</AdditionalIncludeDirectories>
       <OpenMPSupport>true</OpenMPSupport>
       <DisableSpecificWarnings>4996;4005;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
@@ -187,10 +187,10 @@
       <AdditionalDependencies>winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Lib>
-      <AdditionalDependencies>Boost\lib\$(PlatformTarget)\libboost_system-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_filesystem-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_thread-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_date_time-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_iostreams-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_serialization-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_chrono-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_atomic-vc140-mt-1_60.lib;Boost\lib\$(PlatformTarget)\libboost_regex-vc140-mt-1_60.lib;OpenNI2\lib\$(PlatformTarget)\OpenNI2.lib;pcl_common_release.lib;pcl_search_release.lib;pcl_features_release.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_system-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_filesystem-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_thread-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_date_time-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_iostreams-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_serialization-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_chrono-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_atomic-vc140-mt-1_64.lib;C:\Program Files\PCL 1.8.1\3rdParty\Boost\lib\libboost_regex-vc140-mt-1_64.lib;C:\Program Files\OpenNI2\Lib\OpenNI2.lib;pcl_common_release.lib;pcl_search_release.lib;pcl_features_release.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>D:\Code\3rd\redistributable\free_use\pcl\src\3rdParty;D:\Code\3rd\redistributable\free_use\pcl\src\bin\$(PlatformTarget)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files\PCL 1.8.1\3rdParty;C:\Program Files\PCL 1.8.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/IGNORE:4006 /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>

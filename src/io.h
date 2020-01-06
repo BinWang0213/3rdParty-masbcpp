@@ -34,6 +34,7 @@ struct io_parameters {
    bool normals;
    bool ma_coords;
    bool ma_qidx;
+   bool ma_radius;
    bool lfs;
    bool mask;
 };

@@ -239,6 +239,16 @@ void madata2npy(std::string npy_path, ma_data &madata, io_parameters &params) {
       cnpy::npy_save(npy_path + "/ma_qidx_out.npy", &madata.ma_qidx[madata.coords->size()], shape, 1, "w");
    }
 
+   if (params.ma_radius) {
+	   std::cout << "Writing ma radius arrays..." << std::endl;
+	   const unsigned int shape[] = { static_cast<unsigned int>(madata.coords->size()) };
+
+	   cnpy::npy_save(npy_path + "/ma_radius_in.npy", &madata.ma_radius[0], shape, 1, "w");
+	   cnpy::npy_save(npy_path + "/ma_radius_out.npy", &madata.ma_radius[madata.coords->size()], shape, 1, "w");
+   }
+
+   
+
    if (params.lfs) {
       std::cout << "Writing lfs array..." << std::endl;
 
